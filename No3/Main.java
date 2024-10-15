@@ -25,7 +25,7 @@ public class Main {
             System.out.println("Welcome, " + customer.getName());
             customer.getDocs().addAll(userDocs); // Menambahkan dokumen ke customer
             customer.applyVerification(customer.getDocs()); // Mengajukan verifikasi
-            customer.showDocs(); // Menampilkan dokumen pengguna
+            customer.showDocs(); // Menampilkan dokumen customer
             System.out.println("----------------------------");
         } else {
             System.out.println("Login failed.");
@@ -39,7 +39,7 @@ public class Main {
         if (admin.login(2, "pass")) {
             System.out.println("----------------------------");
             System.out.println("Admin logged in. Welcome, " + admin.getName());
-            admin.verifyUser(customer); // Verifikasi user Customer
+            admin.verifyUser(customer); // Verifikasi Customer
             admin.updateVehicleDetails(101); // Update detail kendaraan
             admin.addVehicle(); // Menambahkan kendaraan
             System.out.println("----------------------------");
